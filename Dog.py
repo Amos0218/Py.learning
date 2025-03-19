@@ -30,7 +30,6 @@ def main():
     # 輸入處理
     n = int(input())  
     start_x, start_y = map(int, input().split())  # 最後一次看到狗的座標
-    start_x, start_y = start_x - 1, start_y - 1  # 轉換為從0開始的索引
     grid = [list(map(int, input().split())) for _ in range(n)]  # 建構地圖
 
     # 計算可達格子數量
@@ -41,7 +40,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# if __name__ == "__main__": 這個條件語句的作用就是保證 只有在直接執行檔案時，
-# 才會執行 main() 函數中的程式碼；如果這個檔案被當作模組導入，
-# 則不會執行 main() 函數，從而避免不必要的程式執行。
-# 這樣設計使得程式碼更具模組化，也方便重複使用
+
