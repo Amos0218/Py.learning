@@ -11,3 +11,6 @@ for i in range(N):
 
 
 print(" ".join(map(str, recipe[:-1])))
+
+
+
